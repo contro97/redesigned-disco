@@ -1,10 +1,9 @@
 import * as React from "react"
 
-export function NavButton(){
+export function NavButton(props: any){
     return(
     <div>
-        <button>Home</button>
-        <button>Projects</button>
+        <button>{props.buttonName}</button>
     </div>
     )
 }
