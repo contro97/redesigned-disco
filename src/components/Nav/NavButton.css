@@ -1,0 +1,8 @@
+.styled-link{
+  display: inline-block;
+  text-decoration: none !important;
+  color: Black;
+  opacity: 0.5;
+  margin: 0 calc( + 0.5vw);
+  padding: 0 4px;
+}
