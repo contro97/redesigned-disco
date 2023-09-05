@@ -1,7 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import './index.css'
-import NavBar from "../components/Nav/NavBar"
+import NavBar from "../components/Nav/NavBar";
 
 const pageStyles = {
   color: "#232129",
@@ -11,10 +11,8 @@ const pageStyles = {
 const IndexPage: React.FC<PageProps> = () => {
   return (
     
-    <main style={pageStyles}>
+    <main>
       <NavBar/>
-      <div>
-      </div>
     </main>
   )
 }
