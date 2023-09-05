@@ -47,3 +47,25 @@ const routes: [string, string][] = [
     active: boolean;
     tabIndex?: number;
   }
+
+export const Links = ({
+    tabIndex,
+    active,
+}: ILinksProps): React.ReactElement => (
+    <Wrapper active={active} role="menu">
+        {routes.map(
+            ([name, route]): React.ReactElement => {
+                return(
+                    <StyledLink
+                    to={route}
+                        key={route}
+                        tabIndex={tabIndex}
+                        role="menuItem"
+                        >
+                        {name}
+                    </StyledLink>
+                )
+            },
+        )}
+    </Wrapper>
+)

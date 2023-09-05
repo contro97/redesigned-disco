@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Links } from './Links'
 // import NavButton from "./NavButton";
 import './NavBar.css';
 
@@ -8,7 +9,7 @@ export function NavBar(){
     const contact = "Contact";
     return(
     <div className="container">
-       Nav bar works
+        Nav Bar Works
     </div>
     )
 }
