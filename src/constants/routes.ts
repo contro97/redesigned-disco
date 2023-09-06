@@ -6,7 +6,7 @@ export class Route {
     static HOME = '/'
     static FREELANCE = '/freelance'
     static PROJECTS = '/projects'
-    static THOUGHTS = '/thoughts'
+    static BLOG = '/blog'
   
     /**
      * Path to the page for all books
