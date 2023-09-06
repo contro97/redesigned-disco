@@ -3,7 +3,8 @@ import s, {css} from 'styled-components';
 
 import { BORDER, WHITE, BLACK_ALPHA } from '../../constants/colors'
 import { Links } from './Links'
-
+import { Logo } from './Logo'
+// import { Social } from './Social'
 import{
     maxWidth,
     SHORT_ANIMATION_DURATION,
@@ -215,6 +216,7 @@ export const Nav = ({
           aria-owns={shadeId}
           role="navigation"
         >
+          <Logo tabIndex={logoTabIndex}/>
           
           <Links active={isActive} tabIndex={tabIndex} />
         </Wrapper>
