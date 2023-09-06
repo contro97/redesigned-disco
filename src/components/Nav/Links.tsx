@@ -56,7 +56,6 @@ const routes: [string, string][] = [
     ['Freelance', Route.FREELANCE],
     ['Projects', Route.PROJECTS],
     ['Blog', Route.BLOG],
-    ['Design', Route.DESIGN],
   ]
 
   interface ILinksProps {

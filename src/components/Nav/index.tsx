@@ -4,6 +4,7 @@ import s, {css} from 'styled-components';
 import { BORDER, WHITE, BLACK_ALPHA } from '../../constants/colors'
 import { Links } from './Links'
 import { Logo } from './Logo'
+import { Bars } from './Bars'
 // import { Social } from './Social'
 import{
     maxWidth,
@@ -217,7 +218,7 @@ export const Nav = ({
           role="navigation"
         >
           <Logo tabIndex={logoTabIndex}/>
-          
+          <Bars handleClick={toggle} tabIndex={barsTabIndex} />
           <Links active={isActive} tabIndex={tabIndex} />
         </Wrapper>
         {!fixed && <NavSpace tabIndex={-1} aria-hidden />}
