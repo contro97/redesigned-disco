@@ -3,19 +3,19 @@ import s from 'styled-components'
 
 import { MenuIcon } from '../shared/icon/Menu'
 import {
-    MOBILE_HEADER_HEIGHT,
-    SHORT_ANIMATION_DURATION,
-    maxWidth,
-    DESKTOP,
-  } from '../../constants/measurements'
+  MOBILE_HEADER_HEIGHT,
+  SHORT_ANIMATION_DURATION,
+  maxWidth,
+  DESKTOP,
+} from '../../constants/measurements'
 import {
-SPACE_KEY_CODE,
-ENTER_KEY_CODE,
-OUTLINE_STYLES,
+  SPACE_KEY_CODE,
+  ENTER_KEY_CODE,
+  OUTLINE_STYLES,
 } from '../../constants/misc'
 
-const ICON_HEIGHT = 24;
-const PADDING = 8;
+const ICON_HEIGHT = 24
+const PADDING = 8
 
 const Wrapper = s.button`
   margin-right: 0.8rem;
@@ -56,27 +56,26 @@ const Wrapper = s.button`
 `
 
 interface IBars {
-    tabIndex?: number
-    handleClick: () => void
-  }
+  tabIndex?: number
+  handleClick: () => void
+}
 
-  export const Bars = ({ tabIndex, handleClick }: IBars): ReactElement => {
-    const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>): void => {
-      if (event.keyCode === SPACE_KEY_CODE || event.keyCode === ENTER_KEY_CODE) {
-        event.preventDefault()
-        handleClick()
-      }
+export const Bars = ({ tabIndex, handleClick }: IBars): ReactElement => {
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>): void => {
+    if (event.keyCode === SPACE_KEY_CODE || event.keyCode === ENTER_KEY_CODE) {
+      event.preventDefault()
+      handleClick()
     }
-  
-    return (
-      <Wrapper
-        tabIndex={tabIndex || 0}
-        onClick={handleClick}
-        // onKeyDown={handleKeyDown}
-        role="button"
-      >
-        <MenuIcon />
-      </Wrapper>
-    )
   }
 
+  return (
+    <Wrapper
+      onClick={handleClick}
+      onKeyDown={handleKeyDown}
+      tabIndex={tabIndex || 0}
+      role="button"
+    >
+      <MenuIcon />
+    </Wrapper>
+  )
+}

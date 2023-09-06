@@ -2,7 +2,7 @@ export const BORDER_RADIUS = '3px'
 export const BORDER_RADIUS_LG = '6px'
 
 export const SHORT_ANIMATION_DURATION = 200
-export const LONG_ANINMATION_DURATION = 400
+export const LONG_ANIMATION_DURATION = 400
 
 export const M0 = '0'
 export const M1 = '0.4rem'
@@ -33,7 +33,6 @@ export const HEADER_Z_INDEX = 1000
 type TMediaQuery = string
 
 export const minWidth = (w: TScreenWidth): TMediaQuery =>
-    `@media screen and (min-width: ${w})`
-
+  `@media screen and (min-width: ${w})`
 export const maxWidth = (w: TScreenWidth): TMediaQuery =>
-    `@media screen and (max-width: ${w})`
+  `@media screen and (max-width: ${w})`

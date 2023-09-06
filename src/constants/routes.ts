@@ -30,10 +30,7 @@ export class Route {
      * External routes
      * ------------------------------------------------------------------------ */
   
-    static CONTACT = 'mailto:cameroncabo@gmail.com'
-    static INSTAGRAM = 'https://www.instagram.com/cameroncabo'
-    static GITHUB = 'https://www.github.com/cacabo'
-    static FACEBOOK = 'https://www.facebook.com/cam.cabo'
-    static LINKEDIN = 'https://www.linkedin.com/in/cameroncabo'
-    static TWITTER = 'https://www.twitter.com/cameroncabo'
+    static CONTACT = 'mailto:ciaranmahon97@gmail.com'
+    static GITHUB = 'https://github.com/contro97'
+    static LINKEDIN = 'https://www.linkedin.com/in/ciaran-mahon/'
   }

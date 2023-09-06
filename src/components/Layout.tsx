@@ -12,50 +12,49 @@ import { LINK_STYLES } from '../constants/misc';
 import { BOLD_FONT_WEIGHT, FONT } from '../constants/fonts'
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    font-family: ${FONT};
-  }
-
-  h1, h2, h3, h4, h5, h6,
-  .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight: ${BOLD_FONT_WEIGHT};
-    text-rendering: optimizeLegibility;
-  }
-  
-  p,
-  li,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    color: inherit;
-
-    font-family: ${FONT};
-
-    a {
-      ${LINK_STYLES}
+    body {
+        font-family: ${FONT};
     }
-  }
 
-  @media only screen and (max-width: ${PHONE}) {
-    html {
-      font-size: 100%;
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-weight: ${BOLD_FONT_WEIGHT};
+        text-rendering: optimizeLegibility;
     }
-  }
+    p,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        color: inherit;
 
-  div {
-    line-height: 1.45;
-    font-size: 1rem;
-  }
+        font-family: ${FONT};
+
+        a {
+            ${LINK_STYLES}
+        }
+    }
+
+    @media only screen and (max-width: ${PHONE}) {
+        html {
+            font-size: 100%
+        }
+    }
+
+    div {
+        line-height: 1.45;
+        font-size: 1rem;
+    }
 `
 
 const Body = s.div<{ mt0: boolean }>`
@@ -68,7 +67,6 @@ const Body = s.div<{ mt0: boolean }>`
     margin-right: 0;
   }
 `
-
 
 const Content = s.main`
     min-height: calc(100vh-${HEADER_HEIGHT});
@@ -86,16 +84,16 @@ const Layout = ({ wide, mt0, children }: ILayoutProps): React.ReactElement => {
 
     return (
         <>
-      <GlobalStyle />
-      <Nav setShouldHideBody={setShouldHideBody} />
-      <Nav setShouldHideBody={setShouldHideBody} fixed />
-      {/* <Body id="top" aria-hidden={shouldHideBody} mt0={mt0}> */}
-        <ContainerComponent>
-          <Content>{children}</Content>
-          {/* <Footer /> */}
-        </ContainerComponent>
-      {/* </Body> */}
-    </>
+          <GlobalStyle />
+          <Nav setShouldHideBody={setShouldHideBody} />
+          <Nav setShouldHideBody={setShouldHideBody} fixed />
+          <Body id="top" aria-hidden={shouldHideBody} mt0={true}>
+            <ContainerComponent>
+              <Content>{children}</Content>
+              
+            </ContainerComponent>
+          </Body>
+        </>
       )
     }
     
