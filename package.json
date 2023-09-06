@@ -1,7 +1,7 @@
 {
   "name": "ciaran-blog",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "ciaran-blog",
   "author": "Ciaran Mahon <ciaranmahon97@gmail.com>",
   "keywords": [

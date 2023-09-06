@@ -78,7 +78,7 @@ interface ILayoutProps {
     children: Children
 }
 
-const Layout = ({ wide, mt0, children }: ILayoutProps): React.ReactElement => {
+const Layout = ({ wide, children }: ILayoutProps): React.ReactElement => {
     const [shouldHideBody, setShouldHideBody] = useState<boolean>(false)
     const ContainerComponent = wide ? ContainerFluid : WideContainer
 
@@ -87,7 +87,7 @@ const Layout = ({ wide, mt0, children }: ILayoutProps): React.ReactElement => {
           <GlobalStyle />
           <Nav setShouldHideBody={setShouldHideBody} />
           <Nav setShouldHideBody={setShouldHideBody} fixed />
-          <Body id="top" aria-hidden={shouldHideBody} mt0={true}>
+          <Body id="top" aria-hidden={shouldHideBody} mt0={false || true}>
             <ContainerComponent>
               <Content>{children}</Content>
               

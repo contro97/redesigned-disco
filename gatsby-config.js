@@ -126,7 +126,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Cameron Cabo's Thoughts",
+            title: "Ciaran Mahon blog",
           },
         ],
       },
