@@ -1,5 +1,5 @@
 export * from './ExternalLink'
-export * from './Github'
+export * from './GitHub'
 export * from './LinkedIn'
 export * from './Mail'
 export * from './Menu'

@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import s from 'styled-components'
 
-import { MenuIcon } from '../shared/icon/Menu'
+import { MenuIcon } from '../shared/Icon/Menu'
 import {
   MOBILE_HEADER_HEIGHT,
   SHORT_ANIMATION_DURATION,

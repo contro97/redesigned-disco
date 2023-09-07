@@ -1,7 +1,7 @@
 import React from 'react'
 import s from 'styled-components'
 import { Route } from '../../constants/routes'
-import { GitHubIcon, LinkedInIcon, MailIcon } from '../shared/icon'
+import { GitHubIcon, LinkedInIcon, MailIcon } from '../shared/Icon'
 import { BLACK } from '../../constants/colors'
 import {
     maxWidth,
