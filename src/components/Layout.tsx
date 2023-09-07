@@ -87,7 +87,7 @@ const Layout = ({ wide, children }: ILayoutProps): React.ReactElement => {
           <GlobalStyle />
           <Nav setShouldHideBody={setShouldHideBody} />
           <Nav setShouldHideBody={setShouldHideBody} fixed />
-          <Body id="top" aria-hidden={shouldHideBody} mt0={false || true}>
+          <Body id="top" aria-hidden={shouldHideBody} mt0={true}>
             <ContainerComponent>
               <Content>{children}</Content>
               

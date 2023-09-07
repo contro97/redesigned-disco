@@ -15,7 +15,7 @@ import {
 const percent = (numCols: number): string => (numCols / 12) * 100 + '%'
 
 interface IContainerTagProps {
-    background?: string
+  background?: string
 }
 
 export const Container = s.div<IContainerTagProps>`
@@ -51,7 +51,7 @@ export const ContainerFluid = s.div<IContainerTagProps>`
   padding-left: ${M2};
   width: 100%;
   display: block;
-  background: ${({background}): string => background || 'transparent'};
+  background: ${({ background }): string => background || 'transparent'};
 
   ${minWidth(DESKTOP)} {
     padding-right: calc(${M2} + 5%);
@@ -65,7 +65,7 @@ export const ContainerFluid = s.div<IContainerTagProps>`
 `
 
 interface ISpacerProps {
-    hiddenOnMobile?: boolean
+  hiddenOnMobile?: boolean
 }
 
 export const Spacer = s.div<ISpacerProps>`
@@ -83,93 +83,93 @@ export const Spacer = s.div<ISpacerProps>`
 `
 
 interface IRowProps {
-    margin?: string;
-    alwaysFlex?: boolean
+  margin?: string
+  alwaysFlex?: boolean
 }
 
 export const Row = s.div<IRowProps>`
-    display: flex;
-    flex-width: row;
-    width: 100%;
-    flex-wrap;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
 
-    ${({ alwaysFlex }): string => 
-        alwaysFlex ? '': `${maxWidth(PHONE)} {display: block}`}
-        
-    ${({ margin }): string => 
-        margin 
-        ? `
-        margin-left: -${margin};
-        margin-right: -${margin};
-        width: calc(100% + ${margin} + ${margin});
-        `
-    :''}
+  ${({ alwaysFlex }): string =>
+    alwaysFlex ? '' : `${maxWidth(PHONE)} { display: block; }`}
+
+  ${({ margin }): string =>
+    margin
+      ? `
+    margin-left: -${margin};
+    margin-right: -${margin};
+    width: calc(100% + ${margin} + ${margin});
+  `
+      : ''}
 `
 
 export interface IColProps {
-    width?: string;
-    sm?: number;
-    offsetSm?: number;
-    md?: number;
-    offsetMd?: number;
-    lg?: number;
-    offsetLg?: number;
-    flex?: boolean;
-    margin?: string;
-    children?: ReactNode;
-    overflowY?: 'visible' | 'scroll ' | 'hidden' | 'auto'
-    background?: string
+  width?: string
+  sm?: number
+  offsetSm?: number
+  md?: number
+  offsetMd?: number
+  lg?: number
+  offsetLg?: number
+  flex?: boolean
+  margin?: string
+  children?: ReactNode
+  overflowY?: 'visibile' | 'scroll' | 'hidden' | 'auto'
+  background?: string
 }
 
 const ColWrapper = s.div<IColProps>`
-    flex: ${({ width }): string => (width ? 'none' : '1')};
-    width: ${({ width }): string => width || 'auto'};
-    overflow-y: ${({ overflowY }): string => overflowY || 'visible'};
-    overflow-x: visible;
+  flex: ${({ width }): string => (width ? 'none' : '1')};
+  width: ${({ width }): string => width || 'auto'};
+  overflow-y: ${({ overflowY }): string => overflowY || 'visible'};
+  overflow-x: visible;
 
-    ${({ sm }): string => (sm ? `width: ${percent(sm)}; flex: none;` : '')}
-    ${({ offsetSm }): string =>
+  ${({ sm }): string => (sm ? `width: ${percent(sm)}; flex: none;` : '')}
+  ${({ offsetSm }): string =>
     offsetSm || offsetSm === 0 ? `margin-left: ${percent(offsetSm)};` : ''}
-    ${minWidth(PHONE)} {
+  ${minWidth(PHONE)} {
     ${({ md }): string => (md ? `width: ${percent(md)}; flex: none;` : '')}
     ${({ offsetMd }): string =>
-        offsetMd || offsetMd === 0 ? `margin-left: ${percent(offsetMd)};` : ''}
-    }
+      offsetMd || offsetMd === 0 ? `margin-left: ${percent(offsetMd)};` : ''}
+  }
 
-    ${minWidth(TABLET)} {
+  ${minWidth(TABLET)} {
     ${({ lg }): string => (lg ? `width: ${percent(lg)}; flex: none;` : '')}
 
     ${({ offsetLg }): string =>
-        offsetLg || offsetLg === 0 ? `margin-left: ${percent(offsetLg)};` : ''}
-    }
+      offsetLg || offsetLg === 0 ? `margin-left: ${percent(offsetLg)};` : ''}
+  }
 
-    ${({ flex }): string => (flex && 'display: flex;') || ''}
+  ${({ flex }): string => (flex && 'display: flex;') || ''}
 `
 
 const ColContainer = s.div<IColProps>`
-    background: ${({ background }): string => background || 'transparent'};
-    overflow-x: visible;
-    position: relative;
+  background: ${({ background }): string => background || 'transparent'};
+  overflow-x: visible;
+  position: relative;
 
-    ${({ margin }): string => 
-        margin ? `margin-left:  ${margin}; margin-right: ${margin};`:''}
+  ${({ margin }): string =>
+    margin ? `margin-left: ${margin}; margin-right: ${margin};` : ''}
 `
 
 export const Col = ({
-    margin,
-    children,
-    background,
-    ...other
-    }: IColProps): React.ReactElement => (
-        <ColWrapper {...other}>
-            <ColContainer margin ={margin} background={background}>
-                {children}
-            </ColContainer>
-        </ColWrapper>
+  margin,
+  children,
+  background,
+  ...other
+}: IColProps): React.ReactElement => (
+  <ColWrapper {...other}>
+    <ColContainer margin={margin} background={background}>
+      {children}
+    </ColContainer>
+  </ColWrapper>
 )
 
 export interface IColSpaceProps {
-    width?: string
+  width?: string
 }
 
 export const ColSpace = s(Col)<IColSpaceProps>`
@@ -182,103 +182,103 @@ export const ColSpace = s(Col)<IColSpaceProps>`
 `
 
 interface IContainerProps {
-    children: ReactNode
-    background?: string
-    foreground?: string
+  children: ReactNode
+  background?: string
+  foreground?: string
 }
 
 export const WideContainer = ({
-    children,
-    ...props
-    }: IContainerProps): ReactElement => (
-        <Container {...props}>
-            <Row>
-                <Col sm={12} md={10} offsetMd={1} offsetLg={2}>
-                    {children}
-                </Col>
-            </Row>
-        </Container>
+  children,
+  ...props
+}: IContainerProps): ReactElement => (
+  <Container {...props}>
+    <Row>
+      <Col sm={12} md={10} offsetMd={1} lg={8} offsetLg={2}>
+        {children}
+      </Col>
+    </Row>
+  </Container>
 )
 
 export const MediumContainer = ({
-    children,
-    ...props
-    }: IContainerProps): ReactElement => (
-        <Container {...props}>
-            <Row>
-                <Col sm={12} md={8} offsetMd={2} lg={6} offsetLg={3}>
-                    {children}
-                </Col>
-            </Row>
-        </Container>
+  children,
+  ...props
+}: IContainerProps): ReactElement => (
+  <Container {...props}>
+    <Row>
+      <Col sm={12} md={8} offsetMd={2} lg={6} offsetLg={3}>
+        {children}
+      </Col>
+    </Row>
+  </Container>
 )
 
 export const ThinContainer = ({
-    children,
-    ...props
+  children,
+  ...props
 }: IContainerProps): ReactElement => (
-    <Container {...props}>
-        <Row>
-            <Col sm={12} md={8} offsetLg={2} lg={5} offsetMd={3.5}>
-                {children}
-            </Col>
-        </Row>
-    </Container>
+  <Container {...props}>
+    <Row>
+      <Col sm={12} md={8} offsetMd={2} lg={5} offsetLg={3.5}>
+        {children}
+      </Col>
+    </Row>
+  </Container>
 )
 
 export const FlexRow = s.div<{ centerOnMobile?: boolean }>`
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 
-    ${(props): string =>
+  ${(props): string =>
     props.centerOnMobile
-    ?`
+      ? `
     ${maxWidth(PHONE)} {
-        display: block;
-        text-align: center;
+      display: block;
+      text-align: center;
 
-        > div {
-            display: inline-block
-        }
+      > div {
+        display: inline-block;
+      }
     }
-    `
-    : ''}
+  `
+      : ''}
 `
 
 export const Flex = s.div<{}>`
-    flex: 1;
+  flex: 1;
 `
 
 export const Masonry = s.div<{}>`
-    column-count: 2;
-    column-gap: ${M2};
+  column-count: 2;
+  column-gap: ${M2};
 
-    ${maxWidth(PHONE)} {
-        column-count: 1;
-    }
+  ${maxWidth(PHONE)} {
+    column-count: 1;
+  }
 
-    ${minWidth(WIDESCREEN)}{
-        column-count: 3;
-    }
+  ${minWidth(WIDESCREEN)} {
+    column-count: 3;
+  }
 
-    > * {
-        display: inline-block;
-        width: 100%
-    }
+  > * {
+    display: inline-block;
+    width: 100%;
+  }
 `
 
-export const BR = s.br<{hiddenOnMobile?: boolean}>`
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: ${M4};
-    display: block;
+export const BR = s.br<{ hiddenOnMobile?: boolean }>`
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: ${M4};
+  display: block;
 
-    ${(props): string =>
-        props.hiddenOnMobile ? `${maxWidth(PHONE)} {display: none;}`: ''}
+  ${(props): string =>
+    props.hiddenOnMobile ? `${maxWidth(PHONE)} { display: none; }` : ''}
 `
 
 export const Center = s.div<{}>`
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 `
