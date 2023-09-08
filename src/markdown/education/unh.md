@@ -1,6 +1,6 @@
 ---
 start: '2016'
-end: '2028'
+end: '2018'
 title: University of New Hampshire, Applied Mathematics
 image: '../../images/education/unh-logo.jpeg'
 location: 'Durham, NH'

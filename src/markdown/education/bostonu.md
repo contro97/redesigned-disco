@@ -7,6 +7,6 @@ location: 'Boston, MA'
 order: -1
 ---
 
-- BA in Applied and Pure Mathematics from College of Arts and Sciences. Statistics concenctration.
+- Bachelor of Arts in Applied and Pure Mathematics from College of Arts and Sciences. Statistics concenctration.
 - Minor in Business Administration and Management from Questrom School of Business.
 - Master's swim club, Fintech Club VP, Entrepreneurship Club VP.
