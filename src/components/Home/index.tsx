@@ -2,6 +2,7 @@ import React from 'react'
 import s from 'styled-components'
 
 import { Hero } from './Hero'
+import { Work } from './Work'
 
 import { M1, minWidth, TABLET } from '../../constants/measurements'
 import { Children } from '../../types'
@@ -35,6 +36,9 @@ const Section = ({
 const HomePage = (): React.ReactElement => (
   <>
     <Hero />
+    <Section title="Work">
+      <Work />
+    </Section>
   </>
 )
 
