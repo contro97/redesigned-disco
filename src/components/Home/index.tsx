@@ -7,6 +7,7 @@ import { Work } from './Work'
 import { M1, minWidth, TABLET } from '../../constants/measurements'
 import { Children } from '../../types'
 import { H3, HR } from '../shared'
+import { Education } from './Education'
 
 
 const SectionWrapper = s.section`
@@ -38,6 +39,9 @@ const HomePage = (): React.ReactElement => (
     <Hero />
     <Section title="Work">
       <Work />
+    </Section>
+    <Section title="Education">
+      <Education/>
     </Section>
   </>
 )
