@@ -5,7 +5,7 @@ import { Route } from '../../../constants/routes'
 import { IWorkFrontmatter } from '../../../types'
 
 interface IWorkNode {
-    fontmatter: IWorkFrontmatter;
+    frontmatter: IWorkFrontmatter;
     html: string;
 }
 
@@ -46,7 +46,7 @@ export const Work = (): React.ReactElement => {
         {(nodes as IWorkNode[]).map(
             ({
                 html,
-                fontmatter: { company, title, location, start, end, image, svg },
+                frontmatter: { company, title, location, start, end, image },
             }) => {
                 const fluid = image?.childImageSharp?.fluid
                 return (
@@ -62,7 +62,7 @@ export const Work = (): React.ReactElement => {
             },
         )}
         <Button as="a" href={Route.RESUME} target="_BLANK">
-            View my resume &arr;
+            View my resume &rarr;
         </Button>
         </>
     )

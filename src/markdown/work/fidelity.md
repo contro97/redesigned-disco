@@ -1,17 +1,16 @@
 ---
-start: 'June 2022'
-end: 'Present'
 company: 'Fidelity Investments'
+start: 'June 2021'
+end: 'April 2023'
 title: 'Full Stack Software Engineer'
 location: 'Remote & Boston, MA '
 image: '../../images/work/fidelity.jpeg'
 order: -1
 ---
 
-- Built data pipelines and apps to model and forecast various stages in the manufacturing value chain:
-  - Demand for raw materials
-  - Production capacity
-  - Sales
-  - Warehousing
-- Built data pipelines and apps for logistics and S&OP processes
-- **Tech:** Python, Spark, TypeScript.
+- Built order interfaces and APIs for internal use on primary trade processing system.
+  - Order routing to external venues
+  - Order validation services
+  - Rules-based trading 
+- Wrote system documentation and active participant in scrum ceremonies
+- **Tech:** Angular, NodeJS, Java, AWS, Terraform, Jenkins, Selenium.
