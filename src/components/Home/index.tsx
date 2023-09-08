@@ -3,7 +3,7 @@ import s from 'styled-components'
 
 import { Hero } from './Hero'
 import { Work } from './Work'
-
+import { Technologies } from './Technologies'
 import { M1, minWidth, TABLET } from '../../constants/measurements'
 import { Children } from '../../types'
 import { H3, HR } from '../shared'
@@ -42,6 +42,9 @@ const HomePage = (): React.ReactElement => (
     </Section>
     <Section title="Education">
       <Education/>
+    </Section>
+    <Section title="Technologies">
+      <Technologies/>
     </Section>
   </>
 )
