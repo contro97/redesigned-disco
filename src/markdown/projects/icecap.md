@@ -1,6 +1,6 @@
 ---
 title: 'Icecap Sports'
-description: "Measuring speed of a lacrosse shot."
+description: "Classifying a lacrosse shot and measuring its speed."
 link: 'https://www.themetric.org/'
 path: '/projects/the-metric'
 repo: 'https://github.com/contro97/themetric'
