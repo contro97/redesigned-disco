@@ -8,6 +8,7 @@ import { M1, minWidth, TABLET } from '../../constants/measurements'
 import { Children } from '../../types'
 import { H3, HR } from '../shared'
 import { Education } from './Education'
+import { RecentProjects } from './RecentProjects'
 
 
 const SectionWrapper = s.section`
@@ -45,6 +46,9 @@ const HomePage = (): React.ReactElement => (
     </Section>
     <Section title="Technologies">
       <Technologies/>
+    </Section>
+    <Section title="Recent Projects">
+      <RecentProjects/>
     </Section>
   </>
 )

@@ -12,5 +12,5 @@ order: 0
   - Order routing to external venues
   - Order validation services
   - Rules-based trading 
-- Wrote system documentation and active participant in scrum ceremonies.
+- Wrote system documentation and facilitated agile ceremonies.
 - **Tech:** Angular, NodeJS, Java, AWS, Terraform, Jenkins, Selenium.
