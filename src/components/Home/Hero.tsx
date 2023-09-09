@@ -66,7 +66,7 @@ export const Hero = (): React.ReactElement => {
             <Flex>
               <H1 mb4>Hi, I&apos;m Ciarán</H1>
               <P>
-                I am a fullstack software engineer with an interest in sustainable technology. I
+                I am a fullstack software engineer with an interest in sustainable technologies. I
                 completed my undergraduate in Applied Mathematics and Business at {' '}
                 <a
                   href="https://www.bu.edu/"
