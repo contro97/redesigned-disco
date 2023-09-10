@@ -1,9 +1,9 @@
 ---
 title: 'Icecap Sports'
 description: "Classifying a lacrosse shot and measuring its speed."
-link: 'https://www.themetric.org/'
-path: '/projects/the-metric'
-repo: 'https://github.com/contro97/themetric'
+link: ''
+path: '/projects/icecap'
+repo: 'https://github.com/contro97/'
 technologies: ['Unity', 'Google Cloud', 'Python', 'PlasticSCM']
 start: 'April 2023'
 end: 'Present'

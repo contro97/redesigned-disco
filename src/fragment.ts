@@ -50,7 +50,7 @@ export const Project = graphql`
   }
 `
 
-export const PartialThought = graphql`
+export const PartialBlog = graphql`
   fragment PartialThought on MarkdownRemark {
     timeToRead
     frontmatter {
@@ -70,7 +70,7 @@ export const PartialThought = graphql`
   }
 `
 
-export const Thought = graphql`
+export const Blog = graphql`
   fragment Thought on MarkdownRemark {
     html
     timeToRead
@@ -90,36 +90,5 @@ export const Thought = graphql`
         }
       }
     }
-  }
-`
-
-export const BookPreview = graphql`
-  fragment BookPreview on BooksJson {
-    title
-    subtitle
-    endDate(formatString: "MMM D, YYYY")
-    startDate(formatString: "MMM D, YYYY")
-    link
-    tags
-    author
-    id
-    rating
-    slug
-  }
-`
-
-export const Book = graphql`
-  fragment Book on BooksJson {
-    title
-    subtitle
-    endDate(formatString: "MMM D, YYYY")
-    startDate(formatString: "MMM D, YYYY")
-    originallyPublished(formatString: "MMM D, YYYY")
-    link
-    tags
-    author
-    id
-    rating
-    html
   }
 `
