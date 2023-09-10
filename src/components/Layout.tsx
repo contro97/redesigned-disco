@@ -3,7 +3,7 @@ import s, { createGlobalStyle } from 'styled-components'
 
 import { Children } from '../types'
 import { Nav } from './Nav'
-// import { Footer } from './Footer'
+import { Footer } from './Footer'
 import { maxWidth, PHONE, HEADER_HEIGHT, M2 } from '../constants/measurements'
 import { WideContainer, ContainerFluid } from './shared/Grid'
 
@@ -90,7 +90,7 @@ const Layout = ({ wide, children }: ILayoutProps): React.ReactElement => {
           <Body id="top" aria-hidden={shouldHideBody} mt0={true}>
             <ContainerComponent>
               <Content>{children}</Content>
-              
+              <Footer />
             </ContainerComponent>
           </Body>
         </>
