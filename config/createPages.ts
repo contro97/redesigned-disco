@@ -13,14 +13,9 @@ const getNext = (arr: any[], idx: number): any =>
 
 interface ICreatePagesData {
   data: {
-    allThoughtsMarkdown: {
-      nodes: IThought[]
-    }
+    
     allProjectsMarkdown: {
       nodes: IProject[]
-    }
-    allBooksJson: {
-      nodes: IBook[]
     }
   }
   errors: any
@@ -36,34 +31,11 @@ export const createPages: GatsbyCreatePages = async ({
   // NOTE this has duplicate graphql code: https://github.com/gatsbyjs/gatsby/issues/12155
   const {
     data: {
-      allThoughtsMarkdown: { nodes: thoughtNodes },
       allProjectsMarkdown: { nodes: projectNodes },
-      allBooksJson: { nodes: bookNodes },
+
     },
     errors,
   }: ICreatePagesData = await graphql(`
-    fragment PartialThought on MarkdownRemark {
-      timeToRead
-      frontmatter {
-        title
-        createdAt(fromNow: true)
-        updatedAt(fromNow: true)
-        path
-        topics
-        subtitle
-        image {
-          childImageSharp {
-            fluid(maxWidth: 848) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              sizes
-            }
-          }
-        }
-      }
-    }
 
     fragment PartialProject on MarkdownRemark {
       frontmatter {
@@ -88,26 +60,13 @@ export const createPages: GatsbyCreatePages = async ({
     }
 
     query {
-      allThoughtsMarkdown: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(markdown/thoughts)/" } }
-        sort: { order: DESC, fields: [frontmatter___createdAt] }
-      ) {
-        nodes {
-          ...PartialThought
-        }
-      }
+
       allProjectsMarkdown: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/(markdown/projects)/" } }
         sort: { order: DESC, fields: [frontmatter___order] }
       ) {
         nodes {
           ...PartialProject
-        }
-      }
-      allBooksJson {
-        nodes {
-          id
-          slug
         }
       }
     }
@@ -117,20 +76,6 @@ export const createPages: GatsbyCreatePages = async ({
     reporter.panicOnBuild('Error while running createPages GraphQL query.')
     return
   }
-
-  thoughtNodes.forEach(({ frontmatter }, idx) => {
-    const { path: pagePath } = frontmatter
-    if (!pagePath) return
-
-    const prev = getPrev(thoughtNodes, idx)
-    const next = getNext(thoughtNodes, idx)
-
-    createPage({
-      path: pagePath,
-      component: thoughtTemplate,
-      context: { prev, next },
-    })
-  })
 
   projectNodes.forEach(({ frontmatter }, idx) => {
     const { path: pagePath } = frontmatter
@@ -143,16 +88,6 @@ export const createPages: GatsbyCreatePages = async ({
       path: pagePath,
       component: projectTemplate,
       context: { prev, next },
-    })
-  })
-
-  bookNodes.forEach(({ id, slug }) => {
-    const bookPath = `/books/${slug}`
-
-    createPage({
-      path: bookPath,
-      component: bookTemplate,
-      context: { id },
     })
   })
 }

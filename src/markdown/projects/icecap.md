@@ -7,7 +7,7 @@ repo: 'https://github.com/contro97/'
 technologies: ['Unity', 'Google Cloud', 'Python', 'PlasticSCM']
 start: 'April 2023'
 end: 'Present'
-image: '../../images/projects/icecapLanding.jpeg'
+image: '../../images/projects/icecapLanding.png'
 color: '#008cff'
 tags: ['Machine Learning', 'Mobile', 'Entrepreneurship']
 collaborators:
