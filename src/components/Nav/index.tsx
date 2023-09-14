@@ -15,7 +15,7 @@ import {
   DESKTOP,
 } from '../../constants/measurements'
 import { Bars } from './Bars'
-import { Shade } from '../shared/Shade'
+import { Shade } from '../shared'
 import {
   isOnMobile,
   disableBodyScroll,
