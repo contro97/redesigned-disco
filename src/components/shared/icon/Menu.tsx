@@ -21,4 +21,4 @@ export const MenuIcon = ( props: IIconProps ): React.ReactElement => {
     )
 }
 
-
+export default MenuIcon;

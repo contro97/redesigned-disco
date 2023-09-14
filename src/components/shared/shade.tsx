@@ -33,3 +33,5 @@ export const Shade = s.div<IShadeProps>(
     opacity: ${show ? '1' : '0'};
   `,
 )
+
+export default Shade;
