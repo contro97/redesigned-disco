@@ -17,13 +17,14 @@ collaborators:
 order: 2
 status: 'Active'
 ---
+Icecap Sports is an IoT device design and software company. For hardware, we design bluetooth enabled devices that transmit data to cell phones and other internet-connected devices. On the software side, we build machine learning models that determine the speed of an object in motion and classify how that object was released. We also design and develop mobile & web applications in-house for our customers.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+In April of 2023, I joined the Icecap sports team. Since then, we have worked to establish an agile development team with me and Kyle handling all software work. I am currently rewriting the mobile application in React Native and tuning our machine learning models in TensorFlow.
 
 ---
 
-### Post mortem
+### Future of Icecap
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Our team is very excited about applications of the icecap hardware and software beyond sports. Our Machine Learning models allow us to classify any motion the device is trained on. We imagine further applications to include manufacturing by attaching an icecap device to something like a piston. Based on the training data of a healthy piston, the data transmitted will be able to tell us when that piston is not functioning properly or is broken. 
+We will soon be releasing the Icecap II which enables data to be stored temporarily on the device before being transmitted.

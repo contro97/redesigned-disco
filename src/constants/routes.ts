@@ -30,7 +30,7 @@ export class Route {
      * External routes
      * ------------------------------------------------------------------------ */
   
-    static CONTACT = 'mailto:ciaranmahon97@gmail.com'
+    static CONTACT = 'mailto:ciaran.s.mahon@gmail.com'
     static GITHUB = 'https://github.com/contro97'
     static LINKEDIN = 'https://www.linkedin.com/in/ciaran-mahon/'
   }

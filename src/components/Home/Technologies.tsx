@@ -18,7 +18,7 @@ export const Technologies = (): React.ReactElement => (
             <P bold mb2>
                 Mobile
             </P>
-            <P> Unity </P>
+            <P> Unity, React Native </P>
         </Col>
 
         <Col margin={M1} sm={12} md={6}>

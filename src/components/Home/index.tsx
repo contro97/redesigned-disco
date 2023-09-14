@@ -35,7 +35,7 @@ const Section = ({
   </SectionWrapper>
 )
 
-const HomePage = (): React.ReactElement => (
+const Home = (): React.ReactElement => (
   <>
     <Hero />
     <Section title="Work">
@@ -53,4 +53,4 @@ const HomePage = (): React.ReactElement => (
   </>
 )
 
-export default HomePage
+export default Home
