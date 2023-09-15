@@ -26,5 +26,4 @@ In April of 2023, I joined the Icecap sports team. Since then, we have worked to
 
 ### Future of Icecap
 
-Our team is very excited about applications of the icecap hardware and software beyond sports. Our Machine Learning models allow us to classify any motion the device is trained on. We imagine further applications to include manufacturing by attaching an icecap device to something like a piston. Based on the training data of a healthy piston, the data transmitted will be able to tell us when that piston is not functioning properly or is broken. 
 We will soon be releasing the Icecap II which enables data to be stored temporarily on the device before being transmitted.
