@@ -7,3 +7,4 @@ location: 'Durham, NH'
 order: 0
 ---
 - UNH Symphony, undergraduate chemistry research, Atkin's Investment Group, master's swim club.
+- Transferred to Boston University after sophomore year to complete Bachelor's degree.
