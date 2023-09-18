@@ -18,13 +18,13 @@ export class Route {
      */
     static BOOK = (slug: string): string => `/books/${slug}`
     static DESIGN = '/design'
-    static RSS = '/rss.xml'
+  
   
     /* ------------------------------------------------------------------------ *
      * File routes
      * ------------------------------------------------------------------------ */
   
-    static RESUME = '/resume.pdf'
+    static RESUME = '/ResumePolished.pdf'
   
     /* ------------------------------------------------------------------------ *
      * External routes
@@ -33,4 +33,4 @@ export class Route {
     static CONTACT = 'mailto:ciaran.s.mahon@gmail.com'
     static GITHUB = 'https://github.com/contro97'
     static LINKEDIN = 'https://www.linkedin.com/in/ciaran-mahon/'
-  }
+}

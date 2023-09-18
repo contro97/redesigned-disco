@@ -61,9 +61,9 @@ export const Work = (): React.ReactElement => {
                 )
             },
         )}
-        <Button as="a" href={Route.RESUME} target="_BLANK">
-            View my resume &rarr;
-        </Button>
+         <Button as="a" href={Route.RESUME} target="_blank" rel="noreferrer">
+        View my resume &rarr;
+      </Button>
         </>
     )
 }
