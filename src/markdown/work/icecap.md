@@ -1,6 +1,6 @@
 ---
 company: 'Icecap Sports'
-start: 'April 2023'
+start: 'August 2023'
 end: 'Present'
 title: 'Senior Software Engineer'
 location: 'Remote'
