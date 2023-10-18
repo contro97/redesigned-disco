@@ -1,6 +1,6 @@
 ---
 start: '2018'
-end: '2021'
+end: '2020'
 title: 'Boston University, B.A. Applied Mathematics'
 image: '../../images/education/bu.jpeg'
 location: 'Boston, MA'
