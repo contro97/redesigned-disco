@@ -1,11 +1,11 @@
 ---
 company: 'Icecap Sports'
-start: 'August 2023'
+start: 'June 2023'
 end: 'Present'
 title: 'Senior Software Engineer'
 location: 'Remote'
-image: '../../images/work/icecap.jpeg'
-order: -1
+image: '../../images/work/icecap.png'
+order: -2
 ---
 
 - Designed and implemented machine learning models that classify motion and determine speed based on data transmitted from bluetooth devices. 
