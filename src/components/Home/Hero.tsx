@@ -43,7 +43,7 @@ export const Hero = (): React.ReactElement => {
     const data = useStaticQuery(
         graphql`
             query{
-                file(relativePath: {eq: "me.jpeg"}){
+                file(relativePath: {eq: "me.JPG"}){
                     childImageSharp {
                         fluid(maxWidth: 256) {
                             ...GatsbyImageSharpFluid
@@ -64,10 +64,10 @@ export const Hero = (): React.ReactElement => {
               <Img fluid={fluid} style={{ width: IMG_SIZE, height: IMG_SIZE }} />
             </ImgWrapper>
             <Flex>
-              <H1 mb4>Hi, I&apos;m Ciarán</H1>
+              <H1 mb4>Hi, I&apos;m Ciarán Mahon.</H1>
               <P>
-                I am a fullstack software engineer with interests in sustainable technologies and financial markets. I
-                completed my undergraduate in Applied Mathematics and Business at {' '}
+                I am a software engineer and yacht skipper. I
+                studied Applied Mathematics and Business at {' '}
                 <a
                   href="https://www.bu.edu/"
                   target="_BLANK"
@@ -75,7 +75,7 @@ export const Hero = (): React.ReactElement => {
                 >
                   {'Boston University.'}
                 </a>{' '}
-                I spend my free time playing music, sailing with friends, and exploring new places.
+                I use my freetime to play music, surf, and explore new places.
               </P>
               <Buttons>
                 <Button to={Route.PROJECTS}>Projects</Button>
