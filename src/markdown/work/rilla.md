@@ -2,7 +2,7 @@
 company: 'Rilla'
 start: 'January 2018'
 end: 'April 2020'
-title: 'Co-Founder, Product Manager'
+title: 'Co-Founder'
 location: 'Remote & Boston, MA '
 image: '../../images/work/rilla.jpeg'
 order: 1
