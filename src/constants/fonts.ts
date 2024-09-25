@@ -4,4 +4,14 @@ export const BOLD_FONT_WEIGHT = 700
 
 export const FONT = `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-'Segoe UI Symbol'`
+'Segoe UI Symbol'` 
+
+
+
+
+
+
+
+
+
+

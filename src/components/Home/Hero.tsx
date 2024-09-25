@@ -66,7 +66,7 @@ export const Hero = (): React.ReactElement => {
             <Flex>
               <H1 mb4>Hi, I&apos;m Ciarán Mahon.</H1>
               <P>
-                I am a software engineer and yacht skipper. I
+                I am Senior Solutions Consultant at ServiceNow. I
                 studied Applied Mathematics and Business at {' '}
                 <a
                   href="https://www.bu.edu/"
@@ -75,7 +75,7 @@ export const Hero = (): React.ReactElement => {
                 >
                   {'Boston University.'}
                 </a>{' '}
-                I use my freetime to play music, surf, and explore new places.
+                In my freetime I create music, sail yachts, learn languages, and explore new places.
               </P>
               <Buttons>
                 <Button to={Route.PROJECTS}>Projects</Button>

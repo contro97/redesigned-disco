@@ -1,8 +1,8 @@
 ---
 company: 'Fidelity Investments'
 start: 'June 2021'
-end: 'June 2023'
-title: 'Full Stack Software Engineer'
+end: 'April 2023'
+title: 'Software Engineer'
 location: 'Remote & Boston, MA '
 image: '../../images/work/fidelity.jpeg'
 order: 0

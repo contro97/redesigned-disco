@@ -1,7 +1,7 @@
 ---
 company: 'ICW Group'
 start: 'November 2023'
-end: 'Present'
+end: 'April 2024'
 title: 'System Analyst II'
 location: 'San Diego, CA'
 image: '../../images/work/icwGroup.png'
