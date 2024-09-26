@@ -66,8 +66,9 @@ export const Hero = (): React.ReactElement => {
             <Flex>
               <H1 mb4>Hi, I&apos;m Ciarán Mahon.</H1>
               <P>
-                I am Senior Solutions Consultant at ServiceNow. I
-                studied Applied Mathematics and Business at {' '}
+                I am a Senior Solutions Consultant at ServiceNow.
+                <br/>
+                 I studied Applied Mathematics and Business at {' '}
                 <a
                   href="https://www.bu.edu/"
                   target="_BLANK"
