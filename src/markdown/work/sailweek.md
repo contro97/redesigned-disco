@@ -8,6 +8,5 @@ image: '../../images/work/sailweek.png'
 order: -1
 ---
 
-- Yacht captain for sailing the dalmatia region of Croatia. Took groups of 8-10 vacationers for weeklong adventures at various islands and ports.
-- Administer first aid, negotiate boat leasing, create circle raft parties, teach crews how to sail, 
-- **Boats:** Hanse 455, Bavaria 49
+- Yacht captain. I sailed around Dalmatia for 4 months with crews of 8-10 people.
+- **Vessels:** Purple Rain, Jagodna, Bare Necessities

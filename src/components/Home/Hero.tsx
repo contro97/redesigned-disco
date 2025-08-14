@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import s from 'styled-components';
 
-import { H1, P, FlexRow, Flex, Button, Buttons, BR } from '../shared'
+import { H1, P, FlexRow, Flex, Button, Buttons, BR, H2 } from '../shared'
 import { Route } from '../../constants/routes';
 import {
     minWidth,
@@ -64,11 +64,9 @@ export const Hero = (): React.ReactElement => {
               <Img fluid={fluid} style={{ width: IMG_SIZE, height: IMG_SIZE }} />
             </ImgWrapper>
             <Flex>
-              <H1 mb4>Hi, I&apos;m Ciarán Mahon.</H1>
+              <H2 mb4>Hey, I'm Ciarán.</H2>
               <P>
-                I am a Senior Solutions Consultant at ServiceNow.
-                <br/>
-                 I studied Applied Mathematics and Business at {' '}
+                I'm a Solutions Consultant at ServiceNow based out of San Diego, CA. I studied Applied Math and Business at {' '}
                 <a
                   href="https://www.bu.edu/"
                   target="_BLANK"
@@ -76,10 +74,14 @@ export const Hero = (): React.ReactElement => {
                 >
                   {'Boston University.'}
                 </a>{' '}
-                In my freetime I create music, sail yachts, learn languages, and explore new places.
+                I like to sail boats, create music, learn languages, and explore new places.
               </P>
               <Buttons>
-                <Button to={Route.PROJECTS}>Projects</Button>
+                <Button to={Route.PROJECTS}>Coding Projects</Button>
+                {/* <Button to={Route.BLOG}>Blog</Button> */}
+                {/* <Button to={}>Music</Button> */}
+                {/* <Button to={Route.BLOG}>Blog</Button> */}
+                {/* <Button to={Route.PHOTOGRAPHY}>Photography</Button> */}
                 {/* <Button to={Route.BLOG}>Blog</Button> */}
               </Buttons>
             </Flex>
