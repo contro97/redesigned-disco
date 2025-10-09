@@ -9,8 +9,8 @@ order: 0
 ---
 
 - Built order interfaces and APIs for internal use on trade processing systems.
-  - Order routing to external venues
-  - Order validation services
-  - Rules-based trading 
+  - Order Routing 
+  - Order Validation 
+  - Order Status
 - Wrote system documentation and facilitated agile ceremonies.
 - **Tech:** Angular, NodeJS, Java, AWS, Terraform, Jenkins, Selenium.

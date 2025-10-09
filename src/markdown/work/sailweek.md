@@ -8,5 +8,5 @@ image: '../../images/work/sailweek.png'
 order: -1
 ---
 
-- Yacht captain. I sailed around Dalmatia for 4 months with crews of 8-10 people.
+- I quit my job as a software engineer and worked as a yacht captain in Croatia. I sailed around Dalmatia for 4 months with crews of 8-10 people on 50 foot sailboats.
 - **Vessels:** Purple Rain, Jagodna, Bare Necessities
