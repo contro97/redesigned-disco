@@ -67,6 +67,6 @@ module.exports = {
         trackingId: 'UA-105075968-1',
       },
     },
-    `gatsby-plugin-preact`,
+    // `gatsby-plugin-preact`,
   ],
 }
